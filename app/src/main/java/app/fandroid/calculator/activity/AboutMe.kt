@@ -13,4 +13,5 @@ class AboutMe : AppCompatActivity() {
         bindingClass3 = ActivityAboutMeBinding.inflate(layoutInflater)
         setContentView(bindingClass3.root)
     }
+
 }

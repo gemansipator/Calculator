@@ -13,4 +13,5 @@ class WorkingActivity : AppCompatActivity() {
         bindingClass2 = ActivityWorkingBinding.inflate(layoutInflater)
         setContentView(bindingClass2.root)
     }
+
 }
