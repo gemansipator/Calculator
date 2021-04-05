@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import app.fandroid.calculator.activity.AboutMe
 import app.fandroid.calculator.activity.WorkingActivity
 import app.fandroid.calculator.databinding.ActivityMainBinding
 
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
     fun onClickWorking(view: View){
         val intent = Intent(this, WorkingActivity::class.java)
+        startActivity(intent)
+    }
+    fun onClickAboutMe(view: View){
+        val intent = Intent(this, AboutMe::class.java)
         startActivity(intent)
     }
 }

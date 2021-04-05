@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#009688"
+    android:onClick="onClickWorking"
     tools:context=".MainActivity">
 
     <ImageView
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="onClickAboutMe"
         android:text="application author"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imCalculator"
