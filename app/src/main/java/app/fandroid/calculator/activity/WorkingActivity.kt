@@ -6,10 +6,11 @@ import app.fandroid.calculator.R
 import app.fandroid.calculator.databinding.ActivityWorkingBinding
 
 class WorkingActivity : AppCompatActivity() {
-    lateinit var bindingClass : ActivityWorkingBinding
+    lateinit var bindingClass2 : ActivityWorkingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(bindingClass.root)
+        bindingClass2 = ActivityWorkingBinding.inflate(layoutInflater)
+        setContentView(bindingClass2.root)
     }
 }
