@@ -23,43 +23,32 @@ class WorkingActivity : AppCompatActivity() {
 
             if (a == b && a == 2.0) {
                 bindingClass2.tvResult.text = "2 + 2 = 5     ...Фиксики"
-
-            }else bindingClass2.tvResult.text = (a + b).toInt().toString()
-
-
+            } else if ((a + b) % 1 == 0.0){
+                bindingClass2.tvResult.text = (a + b).toInt().toString()
+            }else{bindingClass2.tvResult.text = (a + b).toString()}
         }
         bindingClass2.btMinus.setOnClickListener {
             val a = bindingClass2.edNumber1.text.toString().toDouble()
             val b = bindingClass2.edNumber2.text.toString().toDouble()
-            val result = a - b
-
-            if (result % 1 == 0.0){
-                bindingClass2.tvResult.text = result.toInt().toString()
-            }else{bindingClass2.tvResult.text = result.toString()}
-
+            if ((a - b) % 1 == 0.0){
+                bindingClass2.tvResult.text = (a - b).toInt().toString()
+            }else{bindingClass2.tvResult.text = (a - b).toString()}
         }
         bindingClass2.btMultiply.setOnClickListener {
             val a = bindingClass2.edNumber1.text.toString().toDouble()
             val b = bindingClass2.edNumber2.text.toString().toDouble()
-            val result = a * b
-            if (result % 1 == 0.0){
-                bindingClass2.tvResult.text = result.toInt().toString()
-            }else{bindingClass2.tvResult.text = result.toString()}
 
+            if ((a * b) % 1 == 0.0){
+                bindingClass2.tvResult.text = (a * b).toInt().toString()
+            }else{bindingClass2.tvResult.text = (a * b).toString()}
         }
         bindingClass2.btSplit.setOnClickListener {
             val a = bindingClass2.edNumber1.text.toString().toDouble()
             val b = bindingClass2.edNumber2.text.toString().toDouble()
-            val result = a / b
-            if (result % 1 == 0.0){
-                bindingClass2.tvResult.text = result.toInt().toString()
-            }else{bindingClass2.tvResult.text = result.toString()}
-            //bindingClass2.tvResult.text = result.toString()
-
+            if ((a / b) % 1 == 0.0){
+                bindingClass2.tvResult.text = (a / b).toInt().toString()
+            }else{bindingClass2.tvResult.text = (a / b).toString()}
         }
-
-
-
     }
     fun onClickMain(view: View){
         val intent = Intent(this, MainActivity::class.java)
