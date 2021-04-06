@@ -20,11 +20,13 @@ class WorkingActivity : AppCompatActivity() {
         bindingClass2.btPlus.setOnClickListener {
             val a = bindingClass2.edNumber1.text.toString().toDouble()
             val b = bindingClass2.edNumber2.text.toString().toDouble()
-            val result = a + b
+            val c = 1.0
+            if (a == b && a == 2.0) {
+                bindingClass2.tvResult.text = "2 + 2 = 5     ...Фиксики"
 
-            if (result % 1 == 0.0){
-                bindingClass2.tvResult.text = result.toInt().toString()
-            }else{bindingClass2.tvResult.text = result.toString()}
+            }else bindingClass2.tvResult.text = (a + b).toInt().toString()
+
+
         }
         bindingClass2.btMinus.setOnClickListener {
             val a = bindingClass2.edNumber1.text.toString().toDouble()
