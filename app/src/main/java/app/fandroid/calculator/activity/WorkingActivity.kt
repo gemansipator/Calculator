@@ -12,10 +12,6 @@ class WorkingActivity : AppCompatActivity() {
 
 
 
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -24,14 +20,18 @@ class WorkingActivity : AppCompatActivity() {
 
         bindingClass2.btPlus.setOnClickListener {
 
-            val a = bindingClass2.edNumber1.text.toString().toDouble()
-            val b = bindingClass2.edNumber2.text.toString().toDouble()
 
-            val result = a + b
+            val a: Double? = bindingClass2.edNumber1.text.toString().toDouble()
+            val b: Double? = bindingClass2.edNumber2.text.toString().toDouble()
+            if (a != null && b != null) {
+                val result = a + b
 
-            if (result % 1 == 0.0){
-                bindingClass2.tvResult.text = result.toInt().toString()
-            }else{bindingClass2.tvResult.text = result.toString()}
+                if (result % 1 == 0.0) {
+                    bindingClass2.tvResult.text = result.toInt().toString()
+                } else {
+                    bindingClass2.tvResult.text = result.toString()
+                }
+            }else{bindingClass2.tvResult?.text = ("Введите числа в поля").toString()}
             //bindingClass2.tvResult.text = result.toString()
         }
         bindingClass2.btMinus.setOnClickListener {
