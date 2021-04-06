@@ -18,9 +18,9 @@ class WorkingActivity : AppCompatActivity() {
         setContentView(bindingClass2.root)
 
         bindingClass2.btPlus.setOnClickListener {
-            val a = bindingClass2.edNumber1.text.toString().toDouble()
-            val b = bindingClass2.edNumber2.text.toString().toDouble()
-            val c = 1.0
+            val a  = bindingClass2.edNumber1.text.toString().toDouble()
+            val b  = bindingClass2.edNumber2.text.toString().toDouble()
+
             if (a == b && a == 2.0) {
                 bindingClass2.tvResult.text = "2 + 2 = 5     ...Фиксики"
 
