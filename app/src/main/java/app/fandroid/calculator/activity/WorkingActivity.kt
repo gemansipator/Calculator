@@ -11,8 +11,6 @@ import kotlin.properties.Delegates
 class WorkingActivity : AppCompatActivity() {
     lateinit var bindingClass2 : ActivityWorkingBinding
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
