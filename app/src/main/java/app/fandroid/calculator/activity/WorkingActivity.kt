@@ -22,7 +22,7 @@ class WorkingActivity : AppCompatActivity() {
             val b  = bindingClass2.edNumber2.text.toString().toDouble()
 
             if (a == b && a == 2.0) {
-                bindingClass2.tvResult.text = "2 + 2 = 5     ...Фиксики"
+                bindingClass2.tvResult.text = "2 + 2 = 5      ...Фиксики"
             } else if ((a + b) % 1 == 0.0){
                 bindingClass2.tvResult.text = (a + b).toInt().toString()
             }else{bindingClass2.tvResult.text = (a + b).toString()}
