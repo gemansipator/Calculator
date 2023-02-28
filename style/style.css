@@ -1,0 +1,114 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: black;
+}
+.Frame5{
+    position: relative;
+    width: 2831px;
+    height: 1747px;
+
+    background: #F2F2F2;
+    border-radius: 60px;
+}
+.Screens{
+    position: absolute;
+    width: 1186px;
+    height: 926px;
+    left: 822px;
+    top: 551px;
+}
+.Content{
+    /* Content */
+
+
+    position: absolute;
+    width: 1466px;
+    height: 115px;
+    left: 682px;
+    top: 269px;
+
+}
+.ContentText{
+    /* iPhone Calculator UI + Mockups 🧮 */
+
+
+    position: absolute;
+    width: 1466px;
+    height: 115px;
+    left: 682px;
+    top: 269px;
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 115px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+
+}
+
+.IPhone13Pro{
+    position: absolute;
+    width: 454px;
+    height: 918.62px;
+    left: 1554px;
+    top: 555px;
+}
+.IPhone13ProFront{
+    position: absolute;
+    left: 54.89%;
+    right: 29.07%;
+    top: 31.77%;
+    bottom: 15.65%;
+}
+.Mockup{
+    position: absolute;
+    left: 55.78%;
+    right: 29.92%;
+    top: 32.97%;
+    bottom: 16.88%;
+}
+.Screens{
+    position: absolute;
+    width: 407.01px;
+    height: 880.65px;
+    left: 1577.93px;
+    top: 574.12px;
+}
+.mask-2{
+    position: absolute;
+    width: 407.01px;
+    height: 880.65px;
+    left: 1577.93px;
+    top: 574.12px;
+}
+.IphoneImg{
+    position: absolute;
+    width: 407.01px;
+    height: 880.65px;
+    left: 1577.93px;
+    top: 574.12px;
+
+    background-image: url(image.png);
+}
+.Vector{
+    /* Vector */
+
+
+    position: absolute;
+    left: 55.78%;
+    right: 29.92%;
+    top: 32.97%;
+    bottom: 16.88%;
+
+    background: #FFFFFF;
+}
